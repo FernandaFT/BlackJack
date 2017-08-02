@@ -25,9 +25,9 @@ var Game = function () {
 			 
 			    	dealer: new Dealer(),
 			    	deck: new Deck(),
-				    balance: config.balance,
-				    currentPlay: null,
-				    currentBet: 0
+				balance: config.balance,
+				currentPlay: null,
+				currentBet: 0
 			 
 			    };
 			}
@@ -119,7 +119,8 @@ var Game = function () {
 		this.chip100 = config.chip100;
 
 		this.messages = {
-			start: 'Place a bet to start playing'
+			start: 'Place a bet to start playing',
+			// money: 'You do not have more money  to bet !!',
 		}
 
 		/**
@@ -176,7 +177,7 @@ var Game = function () {
 	     * Adds the event handlers to the view buttons
 	     */
 	    this.addEvents = function() {
-	    	chip1.addEventListener('click', function(){ model.updateBet(1) });
+	    	chip1.addEventListener('click', function(){ model.updateBet(1)});
 	    	chip5.addEventListener('click', function(){ model.updateBet(5) });
 	    	chip25.addEventListener('click', function(){ model.updateBet(25) });
 	    	chip100.addEventListener('click', function(){ model.updateBet(100) });
