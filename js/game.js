@@ -8,6 +8,7 @@ var Game = function () {
 		gameHandler.init();
 	}
 
+<<<<<<< HEAD
 	function GameModel(config) {
 
 		/**
@@ -185,6 +186,8 @@ var Game = function () {
 
 	}
 
+=======
+>>>>>>> ce0e6f275c2f032d43edd2b44fe2eb2f10fc9188
 	return {
 		init: init
 	}
